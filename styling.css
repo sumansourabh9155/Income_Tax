@@ -1,0 +1,504 @@
+.div1{
+	grid-area: topsocaiallink;
+    padding : 5px 20px;
+	background-color: #0561C8;
+
+}
+.div2{
+	background-color: white;
+	grid-area: topheader;
+	margin: 10px 10px;
+}
+.div3{
+
+	grid-area: box1;
+	margin: 20px auto;
+
+}
+.div4{
+	grid-area: login;
+}
+.div5{
+	grid-area: main;
+}
+.div6
+{
+	grid-area: box2;
+	padding: 10px;
+}
+.div7{
+
+	grid-area: box3;
+	
+}
+.div8{
+	grid-area: box4;
+
+}
+.div9{
+	grid-area: box5;
+
+}
+.div10{
+	grid-area: footer;
+	background-color: #DDDAD0;
+
+}
+.navbar{
+	background-color:bisque;
+	grid-area: navbar;
+		margin: 0;
+	padding: :0;
+}
+.showcase{
+/*	background-color: chartreuse;*/
+	grid-area: showcase;
+/*	border: 1px black solid;*/
+	padding:10px;
+}
+main{
+
+	display: grid;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+		"topsocaiallink topsocaiallink topsocaiallink"
+		"topheader topheader topheader"
+		"navbar navbar navbar"
+		"showcase showcase showcase"
+		"box1 box1 box1"
+		"login main main"
+		"box2 box2 box2"
+		"box3 box4 box5"
+		"footer footer footer";
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.fa {
+  padding : 3px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+ border-radius: 20px;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+	height: 15px;
+	width:15px;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+	height: 15px;
+	width:15px;
+}
+.fa-instagram{
+background: #f09433; 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  color: white;
+	height: 15px;
+	width:15px;
+}
+.fa-youtube{
+	background: #FE0100;
+  color: white;
+	height: 15px;
+	width:15px;
+}
+.socialicon{
+	color:white;
+	height: 13px;
+	width:13px;
+	font-family: sans-serif;
+	font-weight: 10;
+}
+.socialicon a{
+text-decoration: none;
+	color: white;
+	height: 13px;
+	width:13px;
+	font-family: sans-serif;
+	font-weight: 10;
+}
+#socialtop{
+	float:right;
+}
+
+#searchbar button{
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+#searchbar{
+	float: right;
+}
+#search1{
+	float: left;
+}
+
+#searchbar input[type=text]  {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+#logotitle a{
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+/*	margin: auto 0;*/
+	
+}
+#logotitle{
+	margin-top:30px;
+}
+
+#logotitle1 a{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+/*	margin: auto 0;*/
+	
+}
+.navul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #EDEDEC;
+margin: 0;
+	
+}
+.navli{
+  display: inline;
+  float: left;
+
+	
+}
+.navli a{
+  display: block;
+color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+.navli a:hover {
+  background-color: #bdbdbd;
+}
+#active {
+  background-color: #0561C8;
+	color: white;
+}
+#active a {
+	color: white;
+}
+/* WRAPPER */
+.tickerv-wrap {
+/*  background: #eee;*/
+  box-sizing: content-box;
+  height: 25px; /* Take note of this */
+  overflow: hidden; /* Hide scrollbars */
+  padding: 10px;
+	border:  1px solid black;
+} 
+
+/* TICKER ANIMATION */
+@keyframes tickerv {
+  0%   {margin-top: 0;}
+  /* Quite literally -ve height of wrapper */
+  25%  {margin-top: -26px;} /* 1 X 25 px */
+  50%  {margin-top: -52px;} /* 2 X 25 px */
+  75%  {margin-top: -78px;} /* 3 X 25 px */
+  100% {margin-top: 0;} /* Back to first line */
+}
+.tickerv-wrap ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  animation-name: tickerv; /* Loop through items */
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, .5, 0);
+}
+.tickerv-wrap ul:hover {
+  /* Pause on mouse hover */
+  animation-play-state: paused;
+}
+
+/* ITEMS */
+.tickerv-wrap ul li {
+  font-size: 18px;
+  line-height: 26px /* Same as wrapper height */
+}
+.box1b {
+  background-color: #5070C3; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+width: 210px;
+	height: 80px;
+	border-radius: 12px;
+}
+.box1b {
+  transition-duration: 0.4s;
+}
+
+.box1b:hover {
+  background-color: #27365c; /* Green */
+  color: white;
+}
+/* Bordered form */
+form {
+  border: 20px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.submitbutton {
+  background-color: #5171C3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.submitbutton:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+	border: none;
+	color: white;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+.mySlides {display:none;}
+.w3-content{
+	padding: 20px;
+	border-style: ridge;
+	border : 1px;
+}
+.tb1, .tr1, td {
+	border-collapse: collapse;
+}
+.tb1{
+	  border-spacing: 5px;
+	
+
+}
+.tr1,.tr4,.tr5,.tr8,.tr9{
+	background-color: #dbdbdb;
+}
+.tr2,.tr4,.tr6,.tr8,.tr10{
+	font-family: courier;
+	font-size:14px;
+	color: lightslategray;
+	padding: 20px;
+}
+.tr1{
+	font-size:20px;
+	font-family: sans-serif;
+}
+.tb1{
+	margin:20px;
+}
+.td2,.td4,.td6,.td8{
+ 
+}
+.td3,.td5,.td7,.td9,.td11{
+	padding-left: 10px;
+ 
+}
+
+
+.tb2{
+	width:100%;
+}
+.thh1{
+	font-size: 25px;
+	color: #3258BA;
+	font-family: sans-serif,Arial;
+	padding-right: 30px;
+	text-align: left;
+	padding-left:20px;
+	padding-top,padding-bottom: 10px;
+
+}
+.ull1{
+	  list-style-type: circle;
+}
+.lii1{
+	display: inline-grid;
+  list-style-type: square;
+	font-size 10px;
+
+}
+
+.aa1{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: black;
+		font-size 10px;
+
+}
+.tbb2{
+	border: 1px solid #dbdbdb;
+	border-collapse: collapse;
+}
+.tddd1{
+	width: 50%;
+	padding: 5px;
+}
+.ulll1{
+	
+}
+.liii1{
+	list-style:circle;
+}
+.aaa1{
+	text-decoration: none;
+	color:black;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+.thhh1{
+	font-size: 25px;
+	color:white;
+	background-color: #5171C3;
+	text-align: left;
+	font-family: sans-serif;
+	padding: 5px;
+}
+
+.tddd2{
+	width: 50%;
+	padding: 5px;
+	line-height:  32px;
+}
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+.container {
+    text-align: center;
+  }
+
+.container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+.testimonials{
+	font-size: 60px;
+	font-family: sans-serif;
+	
+}
+.tbf{
+	width:100%;
+	  margin-left: auto;
+  margin-right: auto;
+}
+.lif{
+	list-style : none;
+
+}
+.aaf{
+	text-decoration: none;
+	color: #444444;
+		
+	}
+.tdf{
+	text-align: left;
+	padding: 10px 50px 10px 50px;
+}
